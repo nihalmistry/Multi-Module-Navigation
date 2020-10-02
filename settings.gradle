@@ -1,0 +1,7 @@
+include ':more'
+include ':products'
+include ':profile'
+include ':core'
+include ':orders'
+include ':app'
+rootProject.name = "MultiModuleNav"

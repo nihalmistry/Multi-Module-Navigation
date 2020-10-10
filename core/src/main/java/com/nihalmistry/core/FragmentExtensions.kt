@@ -7,5 +7,11 @@ import androidx.navigation.fragment.findNavController
 fun Fragment.getParentNavController(): NavController? {
     val currentHost = parentFragment
     val parentHost = currentHost?.parentFragment
+
     return parentHost?.findNavController()
+}
+
+fun Fragment.getMainNavController(): NavController? {
+    val currentHost = parentFragment
+    return currentHost?.findNavController()
 }
